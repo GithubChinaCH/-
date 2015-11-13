@@ -10,4 +10,7 @@
 
 @interface LoadMoreFooterView : UIView
 
+- (instancetype)initWithObject:(id)obj AndSEL:(SEL)sel scrollV:(UIScrollView *)scrollView;
+
+- (void)endRefresh:(void(^)(void))finishBlock;
 @end
